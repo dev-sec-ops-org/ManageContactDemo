@@ -5,11 +5,11 @@
 // Pipeline block
 pipeline {
     // Agent block
-    agent {
-        node {
-            label 'Manage_Contact_Demo'    
-        }
-    }
+    //agent {
+        //node {
+            //label 'Manage_Contact_Demo'    
+        //}
+    //}
     
     options {
         buildDiscarder(
