@@ -74,7 +74,7 @@ pipeline {
                     echo "Pushing the image to docker hub"
     
                     def localImage = "${params.Image_Name}:${params.Image_Tag}"
-                    def repositoryName = "pchejara/${localImage}"
+                    def repositoryName = "nambgit/${localImage}"
     
                     sh "docker tag ${localImage} ${repositoryName} "
                     docker.withRegistry("", "DockerHubCredentials") {
